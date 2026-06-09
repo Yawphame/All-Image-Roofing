@@ -12,9 +12,14 @@ html{
 
 body{
     font-family:'Inter',sans-serif;
-    background:#ffffff;
+    background:#07111f;
     color:#111827;
     line-height:1.6;
+    overflow-x:hidden;
+}
+
+html{
+    overflow-x:hidden;
 }
 
 a{
@@ -79,6 +84,7 @@ a{
 /* HERO */
 
 .hero {
+    overflow:hidden;
     min-height: 100vh;
     background:
         linear-gradient(
@@ -213,9 +219,9 @@ a{
 
     border:1px solid rgba(255,255,255,0.08);
 
-    border-radius:22px;
+    border-radius:18px;
 
-    padding:40px 20px;
+    padding:30px 15px;
 
     text-align:center;
 
@@ -237,7 +243,7 @@ a{
 
     color:#d4a017;
 
-    font-size:3rem;
+    font-size:2.4rem;
 
     font-weight:800;
 
@@ -394,7 +400,7 @@ a{
         font-size: 1rem;
     }
 }
-}
+
 .mobile-menu{
     position: fixed;
     top: 80px;
