@@ -996,92 +996,57 @@ a{
 /* FOOTER */
 
 .footer{
-    background:#050d18;
-
+    background:#020c1c;
     padding:90px 20px 30px;
-
-    border-top:1px solid rgba(255,255,255,.08);
+    border-top:3px solid #d4a017;
 }
 
 .footer-grid{
     display:grid;
-
-    grid-template-columns:2fr 1fr 1fr;
-
+    grid-template-columns:repeat(3,1fr);
     gap:50px;
-
     margin-bottom:50px;
 }
 
-.footer-brand h3{
+.footer-col h3,
+.footer-col h4{
     color:white;
-
-    font-size:1.5rem;
-
-    margin-bottom:15px;
-
+    margin-bottom:20px;
     font-weight:800;
 }
 
-.footer-brand p{
-    color:#aeb8c5;
-
-    line-height:1.9;
-
-    max-width:450px;
+.footer-col p{
+    color:#aeb7c5;
+    line-height:1.8;
+    margin-bottom:12px;
 }
 
-.footer-links h4,
-.footer-contact h4{
-    color:white;
-
-    margin-bottom:20px;
-
-    font-size:1.1rem;
-}
-
-.footer-links{
-    display:flex;
-
-    flex-direction:column;
-
-    gap:12px;
-}
-
-.footer-links a{
-    color:#aeb8c5;
-
+.footer-col a{
+    display:block;
+    color:#aeb7c5;
+    margin-bottom:14px;
     transition:.3s;
 }
 
-.footer-links a:hover{
+.footer-col a:hover{
     color:#d4a017;
 }
 
-.footer-contact{
-    display:flex;
-
-    flex-direction:column;
-
-    gap:12px;
-}
-
-.footer-contact a,
-.footer-contact p{
-    color:#aeb8c5;
+.footer-btn{
+    display:inline-block;
+    margin-top:15px;
+    background:#d4a017;
+    color:#111 !important;
+    padding:14px 26px;
+    border-radius:12px;
+    font-weight:700;
 }
 
 .footer-bottom{
-    border-top:1px solid rgba(255,255,255,.08);
-
-    padding-top:25px;
-
     text-align:center;
-}
-
-.footer-bottom p{
-    color:#7f8a99;
-
+    padding-top:30px;
+    border-top:1px solid rgba(255,255,255,.08);
+    color:#7f8b9d;
     font-size:.95rem;
 }
 
@@ -1090,19 +1055,16 @@ a{
 @media(max-width:768px){
 
     .footer{
-        padding:70px 20px 25px;
+        text-align:center;
     }
 
     .footer-grid{
         grid-template-columns:1fr;
-
-        gap:35px;
-
-        text-align:center;
+        gap:40px;
     }
 
-    .footer-brand p{
-        max-width:none;
+    .footer-btn{
+        margin:auto;
     }
 
 }
